@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Etch A Sketch</h1>
-    </header>
-    <section class="board">
-    </section>
-    <label for="">Board size</label>
-    <input 
-        type="number"
-        value = "16"
-        onchange="changeSize(this.value)"
-    >
-    <button class="btn" onclick="changeColor('red')">red</button>
-    <button class="btn" onclick="changeColor('blue')">blue</button>
-    <button class="btn" onclick="changeColor('green')">green</button>
+    <div class="container">
+        <header>
+            <h1><span id="red">Etch</span> <span id="green">A</span> <span id="blue">Sketch</span></h1>
+        </header>
+        <section class="board">
+        </section>
+        <div class="user-input">
+            <label for="">Board size</label>
+            <input 
+                type="number"
+                value = "16"
+                onchange="changeSize(this.value)"
+            >
+            <button class="btn red" onclick="changeColor('red')">red</button>
+            <button class="btn green" onclick="changeColor('green')">green</button>
+            <button class="btn blue" onclick="changeColor('blue')">blue</button>
+        </div>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
