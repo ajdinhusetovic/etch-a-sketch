@@ -11,12 +11,9 @@ body {
     line-height: 1.6;
 }
 
-.game {
+.board {
     width: 500px;
     height: 500px;
     display: grid;
-    grid-template-columns: repeat(32, 1fr);
-    grid-template-rows: repeat(32, 1fr);
-    background-color: aqua;
 }
 

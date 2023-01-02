@@ -1,18 +1,13 @@
-const section = document.querySelector('.game');
-let click = true;
+const board = document.querySelector('.board');
+let size = 16;
+board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
-const game = () => {
-    // creating game board
-    for (let i = 0; i < 1024; i++){
-        const div = document.createElement('div');
-        div.classList.add('board');
-        section.appendChild(div);
-        // when mouse hovers over divs they change colors ("drawing" effect)
-        div.addEventListener('mouseover', () => {
-            div.style.backgroundColor = "purple";
-        })
-    }
+for (let i = 0; i < size * size; i++){
+    let square = document.createElement('div');
+    square.style.backgroundColor = "blue";
+    board.appendChild(square)
+    square.addEventListener('mouseover', () => {
+        square.style.backgroundColor = "black";
+    })
 }
-
-
-game();
