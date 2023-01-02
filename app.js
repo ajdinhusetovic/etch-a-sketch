@@ -30,6 +30,6 @@ function colorSquare(){
     this.style.backgroundColor = color;
 }
 
-function changeColor(c){
-    color = c
+function changeColor(colorInput){
+    color = colorInput
 }
