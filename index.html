@@ -14,8 +14,11 @@
     <section class="board">
     </section>
     <label for="">Board size</label>
-    <input type="number" class="board-size">
-    <button class="change-size">CHANGE</button>
+    <input 
+        type="number"
+        value = "16"
+        onchange="changeSize(this.value)"
+    >
     <button class="btn" onclick="changeColor('red')">red</button>
     <button class="btn" onclick="changeColor('blue')">blue</button>
     <button class="btn" onclick="changeColor('green')">green</button>
